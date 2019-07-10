@@ -2,7 +2,7 @@
 <html>
   <head>
      <meta charset="utf-8">
-     <title>Transportation Survey</title>
+     <title>Portland Parkfinder</title>
      <!--Bootstrap, and my own css-->
      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
      <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -13,17 +13,18 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h2>Portland Parkfinder</h2>
       </div>
-      <form id="transportation_survey">
+      <h5>Looking for something to do on a sunny day in Portland, Oregon? Choose options below to find the park that's the right fit for you!</h5>
+      <form id="park-survey">
         <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-          <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
+          <p>These are the requirements I <em>must</em> have for an enjoyable park visit:</p>
+          <input type="checkbox" name="required-item" value="playground">A playground<br>
+          <input type="checkbox" name="required-item" value="tennis-court">A tennis court<br>
+          <input type="checkbox" name="required-item" value="basketball-court">A basketball court<br>
+          <input type="checkbox" name="required-item" value="walk">Walking.<br>
+          <input type="checkbox" name="required-item" value="bus">Riding the bus.<br>
+          <input type="checkbox" name="" value="train">Riding the train.<br>
           <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
           <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
           <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
@@ -32,11 +33,26 @@
           <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
           <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
         </div>
+        <div id="question-2">
+        <p>Check the boxes of things you absolutely do <em>not</em> in your park experience:</p>
+        </div>
+        <div id="question-3">
+        <p>Here are some extra amenities I would like, if posssible:</p>
+        </div>
+
        <button type="submit">Submit Survey</button>
       </form>
-      <span id="work-responses">
-        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
-      </span>
+      <div id="results">
+        <h4>Here are your highest recommended parks!</h4>
+        <ul>
+
+        </ul>
+        <h4>Here are other parks you may enjoy:</h4>
+          <ul>
+
+          </ul>
+        <p>Thank you for using Portland Parkfinder!</p>
+      </div>
     </div>
   </body>
 </html>
